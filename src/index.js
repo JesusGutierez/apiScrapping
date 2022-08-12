@@ -2,7 +2,6 @@ const DB_HOST = require('../env')
 const express = require("express")
 const mongoose = require("mongoose")
 const routes = require("./routes")
-const Profile = require("./models/profile")
 
 mongoose
 	.connect(DB_HOST, { useNewUrlParser: true })

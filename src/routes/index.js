@@ -1,11 +1,7 @@
 const express = require("express")
-/* const ProfileSchema = require("../models/profile") */
 const Profile = require("../models/profile")
 const router = express.Router()
 
-
-
-// Get all posts
 router.get("/profiles", async (req, res) => {
 	const profiles = await Profile.find()
 	res.send(profiles)
